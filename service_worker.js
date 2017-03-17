@@ -18,7 +18,7 @@ this.addEventListener('install', function(event) {
         // use the "delete" functionality below and make 
         // this a 'v2' //(or whatever you wish to call it.
 
-        caches.open('v1').then(function(cache) {
+        caches.open('v2').then(function(cache) {
             return cache.addAll([
                 //  These are the files we want to cache so // we can access offline! For your project 
                 // you'll need to add your own. You can 
