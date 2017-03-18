@@ -3,11 +3,17 @@
  * @author Matt West <matt.west@kojilabs.com>
  * @license MIT {@link http://opensource.org/licenses/MIT}.
  */
+ function createGuid() {
+    function s4() {
+        return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+    }
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+}
+ var datastore = null;
 
 var todoDB = (function() {
   var tDB = {};
-  var datastore = null;
-
+  
   /**
    * Open a connection to the datastore.
    */
@@ -101,7 +107,7 @@ var todoDB = (function() {
     var objStore = transaction.objectStore('todo');
 
     // Create a timestamp for the todo item.
-    var timestamp = new Date().getTime();
+    var timestamp =createGuid();// new Date().getTime();
     
     // Create an object for the todo item.
     var todo = {

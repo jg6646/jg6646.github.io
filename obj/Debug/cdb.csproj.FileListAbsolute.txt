@@ -1,0 +1,4 @@
+c:\users\gustavo pedroza romo\documents\visual studio 2010\Projects\cdb\cdb\bin\cdb.dll
+c:\users\gustavo pedroza romo\documents\visual studio 2010\Projects\cdb\cdb\bin\cdb.pdb
+c:\users\gustavo pedroza romo\documents\visual studio 2010\Projects\cdb\cdb\obj\Debug\cdb.dll
+c:\users\gustavo pedroza romo\documents\visual studio 2010\Projects\cdb\cdb\obj\Debug\cdb.pdb
